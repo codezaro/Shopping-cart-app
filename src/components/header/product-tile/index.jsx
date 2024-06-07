@@ -26,8 +26,11 @@ export default function Products({ products }) {
           <h1 className="truncate w-40 mt-3 font-bold text-lg text-gray-700">
             {products?.title}
           </h1>
+          <h2 className=" flex justify-center items-center font-bold text-lg text-gray-700">
+            ${products?.price}
+          </h2>
         </div>
-        <div className="flex items-center justify-center w-full mt-5">
+        <div className="flex items-center justify-center w-full ">
           <button
             onClick={
               cart.some((item) => item.id === products.id)
